@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohammed Afkar M A — CV</title>
+<style>
+  :root {
+    --ink: #1d2a24;
+    --muted: #5b6b63;
+    --accent: #2f8f5b;
+    --accent-soft: #e7f4ec;
+    --line: #d9e3dd;
+    --bg: #f5f8f6;
+    --paper: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 15px/1.55 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  .page {
+    max-width: 860px;
+    margin: 32px auto;
+    background: var(--paper);
+    padding: 44px 52px;
+    border-radius: 10px;
+    box-shadow: 0 2px 14px rgba(0,0,0,.06);
+  }
+  header { border-bottom: 3px solid var(--accent); padding-bottom: 18px; margin-bottom: 8px; }
+  h1 { margin: 0; font-size: 30px; letter-spacing: .3px; }
+  .tagline { margin: 4px 0 12px; color: var(--accent); font-weight: 600; }
+  .contact { display: flex; flex-wrap: wrap; gap: 6px 22px; color: var(--muted); font-size: 14px; }
+  .contact a { color: inherit; text-decoration: none; }
+  .contact a:hover { color: var(--accent); }
+  h2 {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 1.6px;
+    color: var(--accent); margin: 26px 0 10px;
+    border-bottom: 1px solid var(--line); padding-bottom: 4px;
+  }
+  p { margin: 0 0 8px; }
+  .item { margin-bottom: 14px; }
+  .item-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; }
+  .item-title { font-weight: 600; }
+  .item-meta { color: var(--muted); font-size: 14px; }
+  .status {
+    display: inline-block; font-size: 11px; font-weight: 600;
+    padding: 1px 8px; border-radius: 10px; margin-left: 6px;
+    background: var(--accent-soft); color: var(--accent); vertical-align: 2px;
+  }
+  ul { margin: 4px 0 0; padding-left: 18px; }
+  li { margin-bottom: 3px; }
+  .skills { display: grid; grid-template-columns: 170px 1fr; gap: 6px 16px; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; color: var(--ink); }
+  @media (max-width: 640px) {
+    .page { margin: 0; padding: 24px 16px; border-radius: 0; box-shadow: none; }
+    .skills { grid-template-columns: 1fr; }
+    .skills dd { margin-bottom: 8px; }
+  }
+  @media print {
+    body { background: #fff; font-size: 12.5px; }
+    .page { margin: 0; padding: 0; box-shadow: none; max-width: none; }
+    h2 { margin-top: 18px; }
+    .item { break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header>
+    <h1>Mohammed Afkar M A</h1>
+    <div class="tagline">Electronics Engineering Student · Embedded &amp; IoT Developer · Maker</div>
+    <div class="contact">
+      <span>Kasaragod, Kerala, India</span>
+      <a href="mailto:afkar3374@gmail.com">afkar3374@gmail.com</a>
+      <a href="https://github.com/afkar-3374">github.com/afkar-3374</a>
+    </div>
+  </header>
+
+  <h2>Profile</h2>
+  <p>
+    Electronics engineering diploma student who likes building real, working systems:
+    ESP32/ESP8266 automation, Raspberry Pi and Jetson hardware, MQTT-based IoT, and
+    web apps backed by Firebase. Founder of the Electrosparkzz team and lead on
+    DDLC, an ongoing electronics hardware initiative. Interested in turning
+    practical engineering into useful products.
+  </p>
+
+  <h2>Education</h2>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Diploma in Electronics Engineering</span>
+      <span class="item-meta">Ongoing</span>
+    </div>
+    <div class="item-meta">Government Polytechnic College, Kasaragod</div>
+    <ul>
+      <li>Coursework: Principles of Electronic Circuits, resonance &amp; RLC circuits, modulation (AM/FM), embedded systems, microcontrollers, programming, applied physics, mathematics.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">SSLC (Kerala State Syllabus)</span>
+    </div>
+    <div class="item-meta">GVHSS Mogral</div>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">DDLC — Modular Electronics Hardware System <span class="status">In progress</span></span>
+      <span class="item-meta">Lead</span>
+    </div>
+    <ul>
+      <li>Designing a three-box modular system: Raspberry Pi 5 controller with display, camera &amp; LED-lighting module, and an ESP32 I/O module driving a 4-channel opto-isolated relay board over MQTT.</li>
+      <li>Planned power distribution with 24 V / 12 V rails and 5 V buck converters, including separate rails per subsystem.</li>
+      <li>DDLC BETA CORE: compact 300 × 150 × 50 mm ACP enclosure with top-panel display and joystick and a dedicated AC power side panel.</li>
+      <li>Managing project batches (Beta 0–2, Gamma 0) with tracked component costs.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">DDLC Invento — Inventory &amp; Finance Web App <span class="status">In progress</span></span>
+      <span class="item-meta">HTML · CSS · JavaScript · Firestore</span>
+    </div>
+    <ul>
+      <li>Web app for tracking components and purchases across project batches, with auto-generated SKUs and stock movements.</li>
+      <li>Planned features: barcode scanning, downloadable inventory statements, and an AI assistant that answers questions from real database records.</li>
+      <li>Deployed on GitHub Pages: <a href="https://afkar-3374.github.io/ddlc_invento/">afkar-3374.github.io/ddlc_invento</a></li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Tempro — Multi-node IoT Climate Monitoring</span>
+      <span class="item-meta">ESP8266 · DHT11/DHT22 · MQTT</span>
+    </div>
+    <ul>
+      <li>Temperature and humidity monitoring across multiple NodeMCU ESP8266 nodes publishing to MQTT, with per-device identification and a live dashboard.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">ESP32 Sensor-driven Relay Automation</span>
+      <span class="item-meta">ESP32 · Arduino C++</span>
+    </div>
+    <ul>
+      <li>Lighting control combining LDR and PIR sensors: ambient-light switching plus motion-triggered timed relay output.</li>
+      <li>Soil-moisture-based relay control for automatic watering.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Offline Wireless Camera Streaming</span>
+      <span class="item-meta">ESP camera · Raspberry Pi</span>
+    </div>
+    <ul>
+      <li>Streaming video from an ESP camera module to a Raspberry Pi over local Wi-Fi without internet access.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Triply — Smart Travel Companion <span class="status">In development</span></span>
+      <span class="item-meta">Founder &amp; Project Lead, Electrosparkzz</span>
+    </div>
+    <ul>
+      <li>AI-powered tourism platform starting with Kasaragod district: destination discovery, recommendations and itinerary planning.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">App Concepts — HERAI, AURA, Ivy <span class="status">Concept / prototype</span></span>
+      <span class="item-meta">PWAs · AI integration</span>
+    </div>
+    <ul>
+      <li><strong>HERAI:</strong> privacy-first AI assistant app for women's everyday needs.</li>
+      <li><strong>AURA:</strong> student productivity PWA with an AI study companion.</li>
+      <li><strong>Ivy:</strong> private, secure couple-chat PWA.</li>
+    </ul>
+  </div>
+
+  <h2>Community</h2>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Curiosity Weekends Makerspace</span>
+      <span class="item-meta">Vidyanagar, Kasaragod</span>
+    </div>
+    <ul>
+      <li>Involved in a weekend makerspace offering hands-on electronics and technology sessions for students and visitors.</li>
+    </ul>
+  </div>
+
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Embedded &amp; Hardware</dt>
+    <dd>Arduino (Uno, Nano), ESP32, ESP8266, Raspberry Pi, NVIDIA Jetson Nano / Orin Nano, sensors (DHT, LDR, PIR, soil moisture), relay &amp; opto-isolated I/O, WS2812B LEDs, power supply design</dd>
+    <dt>Programming</dt>
+    <dd>C/C++ (Arduino), Python, MicroPython, JavaScript, HTML, CSS</dd>
+    <dt>IoT &amp; Cloud</dt>
+    <dd>MQTT (HiveMQ, mqtt.js), Firebase / Firestore, Google Sheets integration, Chart.js dashboards</dd>
+    <dt>Tools</dt>
+    <dd>Git, GitHub, GitHub Pages, GitHub Actions, Ubuntu Linux, Arduino IDE, PWAs, AI development tools</dd>
+    <dt>Design</dt>
+    <dd>Electronics enclosure design, CAD, product layout</dd>
+    <dt>Languages</dt>
+    <dd>English</dd>
+  </dl>
+
+  <h2>Interests</h2>
+  <p>AI products, industrial automation, entrepreneurship, public administration.</p>
+
+</main>
+</body>
+</html>
